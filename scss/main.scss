@@ -1,0 +1,103 @@
+@import '_resets';
+@import '_config';
+
+@mixin transition{
+    transition: all ease-in-out 0.5s;
+};
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: $primary-background-color;
+
+    .container {
+        width: 90%;
+        margin: auto;
+
+        .contact-links {
+            margin: 40px auto;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+
+                .icon {
+                    transform: scale(1.2);
+                    color: $primary-text-color;
+                    margin: 0px 5px 0px 5px;
+                    @include transition();
+
+                    &:hover {
+                        transform: scale(1.9);
+                        border-bottom: 2px solid navy;
+                    }
+                }
+            }
+        }
+
+        .main-catch-text {
+            .main-catch-heading {
+                margin-top: 30px;
+                color: $primary-text-color;
+                font-weight: bold;
+                font-size: 40px;
+            }
+
+            .main-catch-paragraph {
+                margin-top: 40px;
+                line-height: 1.8;
+
+                span {
+                    color: $primary-text-color;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .tools-section {
+            margin-top: 40px;
+
+            .tools-heading-text {
+                color: $primary-text-color;
+            }
+
+            .tools-section-paragraph {
+                margin-top: 10px;
+                line-height: 1.8;
+            }
+
+            .tools-logo-cont {
+                margin-top: 10px;
+
+                .tools-logo-item {
+                    display: flex;
+                    margin-top: 10px;
+
+                    .icon {
+                        transform: scale(1.3);
+                        color: $primary-text-color;
+                    }
+
+                    p {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+        .resume-section {
+            margin-top: 40px;
+
+            a {
+                text-decoration: none;
+                color: $primary-text-color;
+                font-weight: bold;                   
+            }
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+}

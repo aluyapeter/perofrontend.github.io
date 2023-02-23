@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: white;
+}
+body .container {
+  width: 90%;
+  margin: auto;
+}
+body .container .contact-links {
+  margin: 40px auto;
+  text-align: center;
+}
+body .container .contact-links a {
+  text-decoration: none;
+}
+body .container .contact-links a .icon {
+  transform: scale(1.2);
+  color: navy;
+  margin: 0px 5px 0px 5px;
+  transition: all ease-in-out 0.5s;
+}
+body .container .contact-links a .icon:hover {
+  transform: scale(1.9);
+  border-bottom: 2px solid navy;
+}
+body .container .main-catch-text .main-catch-heading {
+  margin-top: 30px;
+  color: navy;
+  font-weight: bold;
+  font-size: 40px;
+}
+body .container .main-catch-text .main-catch-paragraph {
+  margin-top: 40px;
+  line-height: 1.8;
+}
+body .container .main-catch-text .main-catch-paragraph span {
+  color: navy;
+  font-weight: bold;
+}
+body .container .tools-section {
+  margin-top: 40px;
+}
+body .container .tools-section .tools-heading-text {
+  color: navy;
+}
+body .container .tools-section .tools-section-paragraph {
+  margin-top: 10px;
+  line-height: 1.8;
+}
+body .container .tools-section .tools-logo-cont {
+  margin-top: 10px;
+}
+body .container .tools-section .tools-logo-cont .tools-logo-item {
+  display: flex;
+  margin-top: 10px;
+}
+body .container .tools-section .tools-logo-cont .tools-logo-item .icon {
+  transform: scale(1.3);
+  color: navy;
+}
+body .container .tools-section .tools-logo-cont .tools-logo-item p {
+  margin-left: 15px;
+}
+body .container .resume-section {
+  margin-top: 40px;
+}
+body .container .resume-section a {
+  text-decoration: none;
+  color: navy;
+  font-weight: bold;
+}
+body .container .footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+}/*# sourceMappingURL=main.css.map */
