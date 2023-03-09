@@ -29,7 +29,7 @@ toggleBtn.addEventListener("click", function() {
             <a href="https://github.com/aluyapeter">
                 <i class="fa-brands fa-github icon-dark"></i>
             </a>
-            <a href="#">
+            <a href="https://twitter.com/perofrontend">
                 <i class="fa-brands fa-twitter icon-dark"></i>
             </a>
             <a href="#">
