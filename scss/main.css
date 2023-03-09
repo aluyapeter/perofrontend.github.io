@@ -6,34 +6,80 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: white;
+  transition: all ease-in-out 0.8s;
 }
 body .container {
   width: 90%;
   margin: auto;
 }
-body .container .contact-links {
-  margin: 40px auto;
-  text-align: center;
+body .container .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  width: 100%;
 }
-body .container .contact-links a {
+body .container .nav-container .contact-links {
+  text-align: left;
+}
+body .container .nav-container .contact-links a {
   text-decoration: none;
 }
-body .container .contact-links a .icon {
+body .container .nav-container .contact-links a .icon {
   transform: scale(1.2);
   color: navy;
   margin: 0px 5px 0px 5px;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.8s;
 }
-body .container .contact-links a .icon:hover {
-  transform: scale(1.9);
-  border-bottom: 2px solid navy;
+body .container .nav-container .contact-links a .icon:hover {
+  padding-top: 10px;
+  transform: scale(1.6);
+}
+body .container .nav-container .contact-links a .icon-dark {
+  transform: scale(1.2);
+  color: gray;
+  margin: 0px 5px 0px 5px;
+  transition: all ease-in-out 0.8s;
+}
+body .container .nav-container .contact-links a .icon-dark:hover {
+  transition: all ease-in-out 0.8s;
+  padding-top: 10px;
+  transform: scale(1.6);
+}
+body .container .nav-container .toggle-btn-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .nav-container .toggle-btn-cont .toggle-icon {
+  width: 20px;
+  height: 12px;
+  background-color: navy;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all ease-in-out 0.8s;
+}
+body .container .nav-container .toggle-btn-cont .toggle-btn-light {
+  background-color: gray;
+  transition: all ease-in-out 0.8s;
+}
+body .container .nav-container .toggle-btn-cont .toggle-btn-text {
+  font-weight: bold;
+  font-size: 10px;
 }
 body .container .main-catch-text .main-catch-heading {
   margin-top: 30px;
   color: navy;
+  transition: all ease-in-out 0.8s;
   font-weight: bold;
   font-size: 40px;
+}
+body .container .main-catch-text .main-catch-heading-dark {
+  transition: all ease-in-out 0.8s;
+  color: orange;
 }
 body .container .main-catch-text .main-catch-paragraph {
   margin-top: 40px;
@@ -42,12 +88,22 @@ body .container .main-catch-text .main-catch-paragraph {
 body .container .main-catch-text .main-catch-paragraph span {
   color: navy;
   font-weight: bold;
+  transition: all ease-in-out 0.8s;
+}
+body .container .main-catch-text .main-catch-paragraph .span-dark {
+  color: orange;
+  transition: all ease-in-out 0.8s;
 }
 body .container .tools-section {
   margin-top: 40px;
 }
 body .container .tools-section .tools-heading-text {
   color: navy;
+  transition: all ease-in-out 0.8s;
+}
+body .container .tools-section .tools-heading-text-dark {
+  color: orange;
+  transition: all ease-in-out 0.8s;
 }
 body .container .tools-section .tools-section-paragraph {
   margin-top: 10px;
@@ -64,19 +120,40 @@ body .container .tools-section .tools-logo-cont .tools-logo-item .icon {
   transform: scale(1.3);
   color: navy;
 }
+body .container .tools-section .tools-logo-cont .tools-logo-item .icon-dark {
+  transform: scale(1.3);
+  color: gray;
+}
 body .container .tools-section .tools-logo-cont .tools-logo-item p {
   margin-left: 15px;
 }
 body .container .resume-section {
   margin-top: 40px;
 }
-body .container .resume-section a {
+body .container .resume-section .anchor1, body .container .resume-section .anchor2 {
   text-decoration: none;
   color: navy;
   font-weight: bold;
+}
+body .container .resume-section .anchor-dark {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  transition: all ease-in-out 0.8s;
 }
 body .container .footer {
   margin-top: 40px;
   text-align: center;
   font-size: 13px;
+}
+
+.light {
+  background-color: white;
+  transition: all ease-in-out 0.8s;
+}
+
+.dark {
+  background-color: black;
+  color: gray;
+  transition: all ease-in-out 0.8s;
 }/*# sourceMappingURL=main.css.map */

@@ -9,22 +9,30 @@
     <script src="js/all.js"></script>
     <title>Aluya Peter</title>
 </head>
-<body>
+<body class="light">
     <div class="container">
-        <div class="contact-links">
-            <a href="https://github.com/aluyapeter" target="_blank">
-                <i class="fa-brands fa-github icon"></i>
-            </a>
-            <a href="https://twitter.com/perofrontend" target="_blank">
-                <i class="fa-brands fa-twitter icon"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fa-brands fa-linkedin icon"></i>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-envelope icon"></i>
-            </a>
+        <!-- <button id="toggle-btn" onclick="toggleMode()">LIGHT/ DARK</button> -->
+        <div class="nav-container">
+            <div id="contacts" class="contact-links">
+                <a href="#">
+                    <i class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter icon"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-envelope icon"></i>
+                </a>
+            </div>
+            <div class="toggle-btn-cont">
+                <div id="toggle-btn" class="toggle-icon"></div>
+                <!-- <p class="toggle-btn-text">Dark Mode</p> -->
+            </div>
         </div>
+
         <div class="main-catch-text">
             <h1 class="main-catch-heading">
                 Frontend Engineer, Music Lover And An Optimist.
@@ -58,7 +66,7 @@
         </div>
         <div class="resume-section">
             <p class="resume-paragraph">
-                I have worked on a few personal projects and you can find them <a href="#">here</a>. You can also find a copy of my resume <a href="#">here</a>.
+                I have worked on a few personal projects and you can find them <a href="#" class="anchor1">here</a>. You can also find a copy of my resume <a href="#" class="anchor2">here</a>.
             </p>
         </div>
 
@@ -68,5 +76,7 @@
             </p>
         </div>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>

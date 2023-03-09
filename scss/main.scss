@@ -2,34 +2,83 @@
 @import '_config';
 
 @mixin transition{
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.8s;
 };
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: $primary-background-color;
+    @include transition();
+    // background-color: $primary-background-color;
 
     .container {
         width: 90%;
         margin: auto;
 
-        .contact-links {
-            margin: 40px auto;
-            text-align: center;
-
-            a {
-                text-decoration: none;
-
-                .icon {
-                    transform: scale(1.2);
-                    color: $primary-text-color;
-                    margin: 0px 5px 0px 5px;
-                    @include transition();
-
-                    &:hover {
-                        transform: scale(1.9);
-                        border-bottom: 2px solid navy;
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            width: 100%;
+    
+            .contact-links {
+                text-align: left;
+    
+                a {
+                    text-decoration: none;
+    
+                    .icon {
+                        transform: scale(1.2);
+                        color: $primary-text-color;
+                        margin: 0px 5px 0px 5px;
+                        @include transition();
+    
+                        &:hover {
+                            padding-top: 10px;
+                            transform: scale(1.6);
+                        }
                     }
+
+                    .icon-dark {
+                        transform: scale(1.2);
+                        color: gray;
+                        margin: 0px 5px 0px 5px;
+                        @include transition();
+    
+                        &:hover {
+                            @include transition();
+                            padding-top: 10px;
+                            transform: scale(1.6);
+                        }
+                    }
+                }
+            }
+
+            .toggle-btn-cont {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .toggle-icon {
+                    width: 20px;
+                    height: 12px;
+                    background-color: navy;
+                    border-top-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    @include transition();
+                }
+    
+                .toggle-btn-light {
+                    background-color: gray;
+                    @include transition();
+                }
+
+                .toggle-btn-text {
+                    font-weight: bold;
+                    font-size: 10px;
                 }
             }
         }
@@ -38,8 +87,16 @@ body {
             .main-catch-heading {
                 margin-top: 30px;
                 color: $primary-text-color;
+                @include transition();
                 font-weight: bold;
                 font-size: 40px;
+            }
+            .main-catch-heading-dark {
+                // margin-top: 30px;
+                @include transition();
+                color: orange;
+                // font-weight: bold;
+                // font-size: 40px;
             }
 
             .main-catch-paragraph {
@@ -49,6 +106,12 @@ body {
                 span {
                     color: $primary-text-color;
                     font-weight: bold;
+                    @include transition();
+                }
+
+                .span-dark {
+                    color: orange;
+                    @include transition()
                 }
             }
         }
@@ -58,6 +121,11 @@ body {
 
             .tools-heading-text {
                 color: $primary-text-color;
+                @include transition();
+            }
+            .tools-heading-text-dark {
+                color: orange;
+                @include transition()
             }
 
             .tools-section-paragraph {
@@ -76,6 +144,10 @@ body {
                         transform: scale(1.3);
                         color: $primary-text-color;
                     }
+                    .icon-dark {
+                        transform: scale(1.3);
+                        color: gray;
+                    }
 
                     p {
                         margin-left: 15px;
@@ -87,10 +159,16 @@ body {
         .resume-section {
             margin-top: 40px;
 
-            a {
+            .anchor1, .anchor2 {
                 text-decoration: none;
                 color: $primary-text-color;
                 font-weight: bold;                   
+            }
+            .anchor-dark {
+                text-decoration: none;
+                color: orange;
+                font-weight: bold;        
+                @include transition();
             }
         }
 
@@ -100,4 +178,15 @@ body {
             font-size: 13px;
         }
     }
+}
+
+.light {
+    background-color: $primary-color-light;
+    @include transition()
+}
+
+.dark {
+    background-color: $primary-color-dark;
+    color: gray;
+    @include transition();
 }
