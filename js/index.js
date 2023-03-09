@@ -26,7 +26,7 @@ toggleBtn.addEventListener("click", function() {
         // toggleText.innerHTML = `<p class="toggle-btn-text">Light Mode</p>`
         contactLinksDom.innerHTML = `
         <div id="contacts" class="contact-links">
-            <a href="#">
+            <a href="https://github.com/aluyapeter">
                 <i class="fa-brands fa-github icon-dark"></i>
             </a>
             <a href="#">
