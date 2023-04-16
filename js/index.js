@@ -1,7 +1,7 @@
 const toggleBtn = document.getElementById('toggle-btn');
 // console.log(toggleBtn);
 
-toggleBtn.addEventListener("click", function() {
+toggleBtn.addEventListener("click", () => {
     var body = document.querySelector('body');
     var headerText = document.querySelector('.main-catch-heading');
     var spanText = document.querySelector('span');
@@ -11,7 +11,6 @@ toggleBtn.addEventListener("click", function() {
     var toggleIcon = document.querySelector('.toggle-icon');
     var contactLinksDom = document.getElementById('contacts');
     var toolsLogo = document.querySelector('.tools-logo-cont');
-    var toggleText = document.querySelector('.toggle-btn-text');
 
 
     if (body.classList.contains('light')) {
@@ -23,10 +22,9 @@ toggleBtn.addEventListener("click", function() {
         anchorTags.classList.add('anchor-dark');
         anchorTagsTwo.classList.add('anchor-dark');
         toggleIcon.classList.add('toggle-btn-light');
-        // toggleText.innerHTML = `<p class="toggle-btn-text">Light Mode</p>`
         contactLinksDom.innerHTML = `
         <div id="contacts" class="contact-links">
-            <a href="https://github.com/aluyapeter">
+            <a href="https://github.com/console_pero">
                 <i class="fa-brands fa-github icon-dark"></i>
             </a>
             <a href="https://twitter.com/perofrontend">
@@ -63,7 +61,6 @@ toggleBtn.addEventListener("click", function() {
         toggleIcon.classList.remove('toggle-btn-light');
         anchorTags.classList.remove('anchor-dark');
         anchorTagsTwo.classList.remove('anchor-dark');
-        // toggleText.innerHTML = `<p style="transition: all ease-in-out 0.8s;" class="toggle-btn-text">Dark Mode</p>`
         contactLinksDom.innerHTML = `
         <div id="contacts" class="contact-links">
             <a href="#">
