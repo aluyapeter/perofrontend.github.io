@@ -132,7 +132,8 @@ body .container .tools-section .tools-logo-cont .tools-logo-item p {
 body .container .resume-section {
   margin-top: 40px;
 }
-body .container .resume-section .anchor1, body .container .resume-section .anchor2 {
+body .container .resume-section .anchor1,
+body .container .resume-section .anchor2 {
   text-decoration: none;
   color: navy;
   font-weight: bold;
@@ -158,4 +159,4 @@ body .container .footer {
   background-color: black;
   color: gray;
   transition: all ease-in-out 0.8s;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
