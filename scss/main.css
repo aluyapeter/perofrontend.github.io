@@ -29,7 +29,7 @@ body .container .nav-container .contact-links a {
 }
 body .container .nav-container .contact-links a .icon {
   transform: scale(1.2);
-  color: navy;
+  color: black;
   margin: 0px 5px 0px 5px;
   transition: all ease-in-out 0.8s;
 }
@@ -57,7 +57,7 @@ body .container .nav-container .toggle-btn-cont {
 body .container .nav-container .toggle-btn-cont .toggle-icon {
   width: 20px;
   height: 12px;
-  background-color: navy;
+  background-color: black;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 5px;
@@ -74,7 +74,7 @@ body .container .nav-container .toggle-btn-cont .toggle-btn-text {
 }
 body .container .main-catch-text .main-catch-heading {
   margin-top: 30px;
-  color: navy;
+  color: black;
   transition: all ease-in-out 0.8s;
   font-weight: bold;
   font-size: 40px;
@@ -88,7 +88,7 @@ body .container .main-catch-text .main-catch-paragraph {
   line-height: 1.8;
 }
 body .container .main-catch-text .main-catch-paragraph span {
-  color: navy;
+  color: black;
   font-weight: bold;
   transition: all ease-in-out 0.8s;
 }
@@ -100,7 +100,7 @@ body .container .tools-section {
   margin-top: 40px;
 }
 body .container .tools-section .tools-heading-text {
-  color: navy;
+  color: black;
   transition: all ease-in-out 0.8s;
 }
 body .container .tools-section .tools-heading-text-dark {
@@ -120,7 +120,7 @@ body .container .tools-section .tools-logo-cont .tools-logo-item {
 }
 body .container .tools-section .tools-logo-cont .tools-logo-item .icon {
   transform: scale(1.3);
-  color: navy;
+  color: black;
 }
 body .container .tools-section .tools-logo-cont .tools-logo-item .icon-dark {
   transform: scale(1.3);
@@ -132,11 +132,10 @@ body .container .tools-section .tools-logo-cont .tools-logo-item p {
 body .container .resume-section {
   margin-top: 40px;
 }
-body .container .resume-section .anchor1,
-body .container .resume-section .anchor2 {
+body .container .resume-section .anchor1 {
   text-decoration: none;
-  color: navy;
-  font-weight: bold;
+  color: black;
+  font-weight: bolder;
 }
 body .container .resume-section .anchor-dark {
   text-decoration: none;
@@ -159,4 +158,4 @@ body .container .footer {
   background-color: black;
   color: gray;
   transition: all ease-in-out 0.8s;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
