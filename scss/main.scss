@@ -72,17 +72,15 @@ body {
           border-bottom-left-radius: 5px;
           @include transition();
         }
-
-        .toggle-btn-light {
-          background-color: gray;
-          @include transition();
-        }
-
         .toggle-btn-text {
           font-weight: bold;
           font-size: 10px;
         }
       }
+    }
+    .toggle-btn-light {
+      background-color: green;
+      @include transition();
     }
 
     .main-catch-text {

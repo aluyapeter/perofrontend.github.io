@@ -64,13 +64,13 @@ body .container .nav-container .toggle-btn-cont .toggle-icon {
   border-bottom-left-radius: 5px;
   transition: all ease-in-out 0.8s;
 }
-body .container .nav-container .toggle-btn-cont .toggle-btn-light {
-  background-color: gray;
-  transition: all ease-in-out 0.8s;
-}
 body .container .nav-container .toggle-btn-cont .toggle-btn-text {
   font-weight: bold;
   font-size: 10px;
+}
+body .container .toggle-btn-light {
+  background-color: green;
+  transition: all ease-in-out 0.8s;
 }
 body .container .main-catch-text .main-catch-heading {
   margin-top: 30px;

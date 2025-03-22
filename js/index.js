@@ -1,28 +1,27 @@
-const toggleBtn = document.getElementById('toggle-btn');
+const toggleBtn = document.getElementById("toggle-btn");
 // console.log(toggleBtn);
 
 toggleBtn.addEventListener("click", () => {
-    var body = document.querySelector('body');
-    var headerText = document.querySelector('.main-catch-heading');
-    var spanText = document.querySelector('span');
-    var toolsHeader = document.querySelector('.tools-heading-text');
-    var anchorTags = document.querySelector('.anchor1');
-    var anchorTagsTwo = document.querySelector('.anchor2');
-    var toggleIcon = document.querySelector('.toggle-icon');
-    var contactLinksDom = document.getElementById('contacts');
-    var toolsLogo = document.querySelector('.tools-logo-cont');
+  let body = document.querySelector("body");
+  let headerText = document.querySelector(".main-catch-heading");
+  let spanText = document.querySelector("span");
+  let toolsHeader = document.querySelector(".tools-heading-text");
+  let anchorTags = document.querySelector(".anchor1");
+  let anchorTagsTwo = document.querySelector(".anchor2");
+  document.querySelector(".toggle-icon").style.backgroundColor = "grey";
+  let contactLinksDom = document.getElementById("contacts");
+  let toolsLogo = document.querySelector(".tools-logo-cont");
 
+  if (body.classList.contains("light")) {
+    body.classList.remove("light");
+    body.classList.add("dark");
+    headerText.classList.add("main-catch-heading-dark");
+    spanText.classList.add("span-dark");
+    toolsHeader.classList.add("tools-heading-text-dark");
+    anchorTags.classList.add("anchor-dark");
+    anchorTagsTwo.classList.add("anchor-dark");
 
-    if (body.classList.contains('light')) {
-        body.classList.remove('light');
-        body.classList.add('dark');
-        headerText.classList.add('main-catch-heading-dark');
-        spanText.classList.add('span-dark');
-        toolsHeader.classList.add('tools-heading-text-dark');
-        anchorTags.classList.add('anchor-dark');
-        anchorTagsTwo.classList.add('anchor-dark');
-        toggleIcon.classList.add('toggle-btn-light');
-        contactLinksDom.innerHTML = `
+    contactLinksDom.innerHTML = `
         <div id="contacts" class="contact-links">
             <a href="https://github.com/console_pero">
                 <i class="fa-brands fa-github icon-dark"></i>
@@ -36,8 +35,8 @@ toggleBtn.addEventListener("click", () => {
             <a href="#">
                 <i class="fa-solid fa-envelope icon-dark"></i>
             </a>
-        </div>`
-        toolsLogo.innerHTML = `
+        </div>`;
+    toolsLogo.innerHTML = `
         <div class="tools-logo-cont">
                 <div class="tools-logo-item">
                     <i class="fa-brands fa-sass icon-dark"></i><p>Sass</p>
@@ -51,17 +50,17 @@ toggleBtn.addEventListener("click", () => {
                 <div class="tools-logo-item">
                     <i class="fa-brands fa-bootstrap icon-dark"></i><p>Bootstrap</p>
                 </div>    
-            </div>`
-    } else {
-        body.classList.remove('dark');
-        body.classList.add('light');
-        headerText.classList.remove('main-catch-heading-dark');
-        spanText.classList.remove('span-dark');
-        toolsHeader.classList.remove('tools-heading-text-dark');
-        toggleIcon.classList.remove('toggle-btn-light');
-        anchorTags.classList.remove('anchor-dark');
-        anchorTagsTwo.classList.remove('anchor-dark');
-        contactLinksDom.innerHTML = `
+            </div>`;
+  } else {
+    body.classList.remove("dark");
+    body.classList.add("light");
+    headerText.classList.remove("main-catch-heading-dark");
+    spanText.classList.remove("span-dark");
+    toolsHeader.classList.remove("tools-heading-text-dark");
+    document.querySelector(".toggle-icon").style.backgroundColor = "black";
+    anchorTags.classList.remove("anchor-dark");
+    anchorTagsTwo.classList.remove("anchor-dark");
+    contactLinksDom.innerHTML = `
         <div id="contacts" class="contact-links">
             <a href="#">
                 <i class="fa-brands fa-github icon"></i>
@@ -76,7 +75,7 @@ toggleBtn.addEventListener("click", () => {
                 <i class="fa-solid fa-envelope icon"></i>
             </a>
         </div>`;
-        toolsLogo.innerHTML = `
+    toolsLogo.innerHTML = `
         <div class="tools-logo-cont">
                 <div class="tools-logo-item">
                     <i class="fa-brands fa-sass icon"></i><p>Sass</p>
@@ -90,6 +89,6 @@ toggleBtn.addEventListener("click", () => {
                 <div class="tools-logo-item">
                     <i class="fa-brands fa-bootstrap icon"></i><p>Bootstrap</p>
                 </div>    
-            </div>`
-    }
-})
+            </div>`;
+  }
+});
