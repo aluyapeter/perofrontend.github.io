@@ -1,18 +1,23 @@
 :root {
-  --bg-color: #ffffff;
-  --text-color: #213547;
-  --link-color: #333333;
-  --link-hover: #646cff;
-  --btn-border: #e0e0e0;
-}
-
-[data-theme='dark'] {
+  // --bg-color: #ffffff;
+  // --text-color: #213547;
+  // --link-color: #333333;
+  // --link-hover: #646cff;
+  // --btn-border: #e0e0e0;
   --bg-color: #1a1a1a;
   --text-color: #f0f0f0;
   --link-color: #e0e0e0;
   --link-hover: #9ec5ff;
   --btn-border: #444444;
 }
+
+// [data-theme='dark'] {
+//   --bg-color: #1a1a1a;
+//   --text-color: #f0f0f0;
+//   --link-color: #e0e0e0;
+//   --link-hover: #9ec5ff;
+//   --btn-border: #444444;
+// }
 
 body {
   margin: 0;
@@ -37,26 +42,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3rem; /* Spacing below the header */
+  // margin-bottom: 2rem;
   padding-bottom: 1rem;
-  //   border-bottom: 1px solid var(--btn-border); /* Optional subtle divider */
+  // border-bottom: 1px solid var(--btn-border);
 }
 
-/* =========================================
-   4. Component Styling
-   ========================================= */
+// Components
 
-/* The container for GitHub and Twitter links */
 .contact-links {
   display: flex;
-  gap: 24px; /* Space between the two icons */
+  flex-direction: column;
+  gap: 24px;
 
   a {
     color: var(--link-color);
     text-decoration: none;
     display: flex;
-    align-items: center;
-    gap: 8px; /* Space between icon and text label */
+    // align-items: center;
+    gap: 8px;
     font-weight: 500;
     transition: color 0.2s ease;
 
@@ -64,7 +67,6 @@ body {
       color: var(--link-hover);
     }
 
-    /* Ensure icons are actually visible and sized correctly */
     svg {
       width: 20px;
       height: 20px;
@@ -72,7 +74,7 @@ body {
   }
 }
 
-/* The Dark Mode Toggle Button */
+/* Theme Toggle Button */
 .theme-toggle-btn {
   background: transparent;
   border: 1px solid var(--btn-border);
@@ -88,7 +90,7 @@ body {
   &:hover {
     border-color: var(--link-hover);
     color: var(--link-hover);
-    background-color: rgba(100, 108, 255, 0.1); /* Subtle background tint */
+    background-color: rgba(100, 108, 255, 0.1);
   }
 
   svg {
@@ -102,17 +104,17 @@ body {
 /* Hero Section */
 .hero-section {
   //   padding: 4rem 0;
-  max-width: 800px; /* Keeps line length readable */
+  max-width: 800px;
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.1;
 
     .highlight {
       color: var(--link-hover);
-      display: block; /* Puts role on a new line or keeps it inline depending on preference */
+      display: block;
     }
   }
 
@@ -121,35 +123,35 @@ body {
     color: var(--text-color);
     opacity: 0.9;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
   }
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.2s;
+// .btn {
+//   display: inline-block;
+//   padding: 12px 24px;
+//   border-radius: 6px;
+//   font-weight: 500;
+//   text-decoration: none;
+//   transition: all 0.2s;
 
-  &.btn-primary {
-    background-color: var(--text-color);
-    color: var(--bg-color);
+//   &.btn-primary {
+//     background-color: var(--text-color);
+//     color: var(--bg-color);
 
-    &:hover {
-      background-color: var(--link-hover);
-      color: #fff;
-    }
-  }
-}
+//     &:hover {
+//       background-color: var(--link-hover);
+//       color: #fff;
+//     }
+//   }
+// }
 
 // ---------------projects
 .projects-section {
   padding-bottom: 4rem;
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     color: var(--text-color);
   }
@@ -157,31 +159,26 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(300px, 1fr)
-  ); /* Responsive Grid */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 70px;
 }
 
 /* --- PROJECT CARD --- */
 .project-card {
   background-color: transparent;
-  border: 1px solid var(--btn-border);
+  // border: 1px solid var(--btn-border);
   //   margin: 100px;
   padding: 1.75rem;
   border-radius: 8px;
-  //   gap: 0px;
   transition:
     transform 0.2s ease,
     border-color 0.2s ease;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ensures all cards are same height */
+  height: 100%;
 
   &:hover {
-    transform: translateY(-5px); /* Subtle lift effect */
-    border-color: var(--link-hover);
+    transform: translateY(-5px);
   }
 
   .card-header {
@@ -234,17 +231,15 @@ body {
     flex-wrap: wrap;
     gap: 12px;
     font-size: 0.85rem;
-    font-family: monospace; /* Gives it a coding vibe */
     color: var(--text-color);
     opacity: 0.7;
   }
 }
 
-// ----------------
 /* --- EXPERIENCE SECTION --- */
 .experience-section {
-  padding-bottom: 4rem;
-  max-width: 800px; /* Limits width for readability */
+  padding-bottom: 3rem;
+  max-width: 800px;
 }
 
 .timeline {
@@ -257,7 +252,7 @@ body {
 }
 
 .timeline-item {
-  position: relative;
+  // position: relative;
 
   /* The little dot on the timeline */
   //   &::before {
@@ -277,7 +272,6 @@ body {
     color: var(--text-color);
     opacity: 0.6;
     margin-bottom: 0.5rem;
-    // font-family: monospace;
   }
 
   .role {
@@ -326,7 +320,7 @@ body {
 
   &:hover {
     border-color: var(--link-hover);
-    transform: translateX(5px); /* Subtle nudge to the right */
+    transform: translateX(5px);
 
     .article-title {
       color: var(--link-hover);
@@ -351,7 +345,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    opacity: 0; /* Hidden by default until hover */
+    opacity: 0;
     transform: translateX(-10px);
     transition: all 0.2s ease;
   }

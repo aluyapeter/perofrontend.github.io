@@ -21,7 +21,7 @@ export const projectsData = [
       'An AI agent built to integrate with the Telex.im platform that functions as an "AI Coworker" that can provide a brief history and a list of the top 5 fintech startups for any given country.',
     tech: ['Python', 'FastAPI', 'Groq'],
     github: 'https://github.com/aluyapeter/finfind-a2a',
-    live: 'null',
+    live: null,
   },
 ];
 
