@@ -1,0 +1,66 @@
+export const heroData = {
+  greeting: 'Peter',
+  role: 'Software Engineer',
+  intro: 'Building scalable systems for fintech and the blockchain',
+};
+
+export const projectsData = [
+  {
+    id: 1,
+    title: 'Wallet Service',
+    description:
+      'A high-performance, async fintech backend that acts as a "Mini-Bank" core, featuring secure authentication, Step-Up security, real-time deposits, wallet to wallet transfer, and professional database migrations.',
+    tech: ['Python', 'FastAPI', 'Docker', 'PostgreSQL'],
+    github: 'https://github.com/aluyapeter/wallet_service',
+    live: null,
+  },
+  {
+    id: 2,
+    title: 'FinFind',
+    description:
+      'An AI agent built to integrate with the Telex.im platform that functions as an "AI Coworker" that can provide a brief history and a list of the top 5 fintech startups for any given country.',
+    tech: ['Python', 'FastAPI', 'Groq'],
+    github: 'https://github.com/aluyapeter/finfind-a2a',
+    live: 'null',
+  },
+];
+
+export const experienceData = [
+  {
+    id: 1,
+    role: 'Intern',
+    company: 'HNG Tech',
+    date: 'Oct 2025 - Dec 2025',
+    description:
+      'Worked on secure backend systems featuring AI integrataion, payment infrastructure, atomic PostgreSQL transactions and automated containerized deployments',
+  },
+];
+
+export const articlesData = [
+  {
+    id: 1,
+    title: 'Reading inputs in Go',
+    url: 'https://bufiopackage.hashnode.dev/reading-input-in-go-using-bufionewscanner-and-bufionewreader-effectively',
+    date: 'May 2025',
+  },
+  {
+    id: 2,
+    title: 'Building a simple CLI tool in Go using Cobra',
+    url: 'https://cobragopackage.hashnode.dev/building-a-simple-cli-tool-in-go-using-cobra',
+    date: 'May 2025',
+  },
+  {
+    id: 3,
+    title:
+      'Building an AI Agent for Country History and Fintech Startup Insights: A Complete Guide',
+    url: 'https://cobragopackage.hashnode.dev/building-an-ai-agent-for-country-history-and-fintech-startup-insights-a-complete-guide',
+    date: 'Nov 2025',
+  },
+  {
+    id: 4,
+    title:
+      'How I Prevented Double-Crediting in My Fintech Wallet (Webhook Idempotency Explained)',
+    url: 'https://webhook-idempotency-explained.hashnode.dev/how-i-prevented-double-crediting-in-my-fintech-wallet-webhook-idempotency-explained',
+    date: 'Jan 2026',
+  },
+];
