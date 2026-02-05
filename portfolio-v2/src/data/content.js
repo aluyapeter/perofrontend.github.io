@@ -7,6 +7,15 @@ export const heroData = {
 export const projectsData = [
   {
     id: 1,
+    title: 'Switch',
+    description:
+      'A DeFi application on the Ethereum Sepolia Testnet. It allows users to cryptographically lock Sepolia (ETH) for a fixed duration.',
+    tech: ['React', 'TypeScript', 'Ether.js', 'Web3.js', 'Zustand', 'Python', 'FastAPI', 'Docker', 'PostgreSQL'],
+    github: 'https://github.com/aluyapeter/switch-smart-vault',
+    live: 'https://switch-smart-vault.vercel.app',
+  },
+  {
+    id: 2,
     title: 'Wallet Service',
     description:
       'A high-performance, async fintech backend that acts as a "Mini-Bank" core, featuring secure authentication, Step-Up security, real-time deposits, wallet to wallet transfer, and professional database migrations.',
@@ -15,7 +24,7 @@ export const projectsData = [
     live: null,
   },
   {
-    id: 2,
+    id: 3,
     title: 'FinFind',
     description:
       'An AI agent built to integrate with the Telex.im platform that functions as an "AI Coworker" that can provide a brief history and a list of the top 5 fintech startups for any given country.',
