@@ -1,7 +1,6 @@
 export const heroData = {
-  greeting: 'Peter',
-  role: 'Software Engineer',
-  intro: 'Building scalable systems for fintech and the blockchain',
+  greeting: "Hi, I'm Peter",
+  intro: 'Building scalable systems across industries',
 };
 
 export const projectsData = [
@@ -10,7 +9,17 @@ export const projectsData = [
     title: 'Switch',
     description:
       'A DeFi application on the Ethereum Sepolia Testnet. It allows users to cryptographically lock Sepolia (ETH) for a fixed duration.',
-    tech: ['React', 'TypeScript', 'Ether.js', 'Web3.js', 'Zustand', 'Python', 'FastAPI', 'Docker', 'PostgreSQL'],
+    tech: [
+      'React',
+      'TypeScript',
+      'Ether.js',
+      'Web3.js',
+      'Zustand',
+      'Python',
+      'FastAPI',
+      'Docker',
+      'PostgreSQL',
+    ],
     github: 'https://github.com/aluyapeter/switch-smart-vault',
     live: 'https://switch-smart-vault.vercel.app',
   },

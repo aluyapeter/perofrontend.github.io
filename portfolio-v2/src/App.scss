@@ -4,11 +4,15 @@
   // --link-color: #333333;
   // --link-hover: #646cff;
   // --btn-border: #e0e0e0;
-  --bg-color: #1a1a1a;
-  --text-color: #f0f0f0;
-  --link-color: #e0e0e0;
-  --link-hover: #9ec5ff;
+  // --bg-color: #1a1a1a;
+  --bg-color: #f0f0f0;
+  --text-color: #1a1a1a;
+  // --text-color: #f0f0f0;
+  --link-color: #1a1a1a;
+  --link-hover: #1a1a1a;
+  // --link-hover: #9ec5ff;
   --btn-border: #444444;
+  text-transform: lowercase;
 }
 
 // [data-theme='dark'] {
@@ -24,7 +28,7 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Bitcount Single', system-ui;
+  font-family: 'Sora', sans-serif;
   line-height: 1.5;
 
   transition:
