@@ -46,11 +46,29 @@ export const projectsData = [
 export const experienceData = [
   {
     id: 1,
+    role: 'Freelance Full-Stack Developer (Contract)',
+    company: 'ACEVirtual-SupportServices',
+    date: 'May 2026 - Jun 2026',
+    description: [
+      'Built and deployed a full-stack brand and blog platform (Next.js on Vercel, FastAPI on Render, PostgreSQL) for an external client, owning architecture end-to-end.',
+      
+      'Designed a custom backend admin dashboard giving the client full control over blog content, media, and site configuration, including a TipTap rich-text editor with slash commands and a content archive system.',
+
+      "Integrated Cloudinary for media handling (with a custom loader bypassing Next.js's image optimizer) and Resend for transactional email."
+    ]
+  },
+  {
+    id: 2,
     role: 'Intern',
     company: 'HNG Tech',
     date: 'Oct 2025 - Dec 2025',
-    description:
-      'Worked on secure backend systems featuring AI integrataion, payment infrastructure, atomic PostgreSQL transactions and automated containerized deployments',
+    description: [
+      'Built secure backend systems featuring AI integration, Paystack payment integration, and atomic PostgreSQL transactions, with automated containerized deployments.',
+
+      'Developed high-performance RESTful APIs (including a String Logic Analyser), prioritising clean architecture, strict typing, and scalable code structure.',
+
+      'Delivered functional code against ticket-based requirements in a fast-paced Agile environment under strict deadlines.'
+    ]
   },
 ];
 

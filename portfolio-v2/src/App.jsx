@@ -1,25 +1,13 @@
 import React from 'react';
-//  { useState, useEffect }
 import './App.scss';
 import Header from './components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Articles from './components/Articles';
 
 function App() {
-  // const [theme, setTheme] = useState('dark');
-
-  // const toggleTheme = () => {
-  //   setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
-  // };
-
-  // useEffect(() => {
-  //   document.documentElement.setAttribute('data-theme', theme);
-  // }, [theme]);
-
   return (
     <div className="container">
       <nav className="top-nav">
