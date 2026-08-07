@@ -1,11 +1,20 @@
 export const heroData = {
   greeting: "Hi, I'm Peter",
-  intro: 'Building scalable systems across industries',
+  intro: 'and i Build scalable systems across industries',
 };
 
 export const projectsData = [
   {
     id: 1,
+    title: 'Wallet Service',
+    description:
+      'A high-performance, async fintech backend that acts as a "Mini-Bank" core, featuring secure authentication, Step-Up security, real-time deposits, wallet to wallet transfer, and professional database migrations.',
+    tech: ['Python', 'FastAPI', 'Docker', 'PostgreSQL'],
+    github: 'https://github.com/aluyapeter/wallet_service',
+    live: null,
+  },
+  {
+    id: 2,
     title: 'Switch',
     description:
       'A DeFi application on the Ethereum Sepolia Testnet. It allows users to cryptographically lock Sepolia (ETH) for a fixed duration.',
@@ -24,15 +33,6 @@ export const projectsData = [
     live: 'https://switch-smart-vault.vercel.app',
   },
   {
-    id: 2,
-    title: 'Wallet Service',
-    description:
-      'A high-performance, async fintech backend that acts as a "Mini-Bank" core, featuring secure authentication, Step-Up security, real-time deposits, wallet to wallet transfer, and professional database migrations.',
-    tech: ['Python', 'FastAPI', 'Docker', 'PostgreSQL'],
-    github: 'https://github.com/aluyapeter/wallet_service',
-    live: null,
-  },
-  {
     id: 3,
     title: 'FinFind',
     description:
@@ -46,8 +46,8 @@ export const projectsData = [
 export const experienceData = [
   {
     id: 1,
-    role: 'Freelance Full-Stack Developer (Contract)',
-    company: 'ACEVirtual-SupportServices',
+    role: 'Software Engineer (Contract)',
+    company: 'Productivity Gourmet',
     date: 'May 2026 - Jun 2026',
     description: [
       'Built and deployed a full-stack brand and blog platform (Next.js on Vercel, FastAPI on Render, PostgreSQL) for an external client, owning architecture end-to-end.',
@@ -59,7 +59,7 @@ export const experienceData = [
   },
   {
     id: 2,
-    role: 'Intern',
+    role: 'Backend Intern',
     company: 'HNG Tech',
     date: 'Oct 2025 - Dec 2025',
     description: [

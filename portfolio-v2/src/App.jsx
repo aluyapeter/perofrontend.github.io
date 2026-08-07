@@ -20,8 +20,8 @@ function App() {
 
       <main>
         <Hero />
-        <Projects />
         <Experience />
+        <Projects />
         <Articles />
       </main>
       <footer
